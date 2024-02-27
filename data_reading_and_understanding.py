@@ -20,6 +20,7 @@ def check_data(dataframe):
     print("\n" + 40 * "-" + "Describe the Data".center(40) + 40 * "-")
     print(dataframe.describe([0.01, 0.05, 0.10, 0.50, 0.75, 0.90, 0.95, 0.99]).T)
 
+checkdf(df)
 
 def grab_col_names(dataframe, cat_th=10, car_th=20):
     """
